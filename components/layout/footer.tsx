@@ -13,7 +13,7 @@ export function Footer() {
     
     <div>
       <Link href="#faq">Privacy</Link>
-      <Link href="https://github.com" target="_blank" rel="noreferrer">Source</Link>
+      <Link href="https://github.com/atharva026/leaf-lens-frontend" target="_blank" rel="noreferrer">Source</Link>
       <span>© 2026 LeafLens</span>
     </div>
   </footer>
