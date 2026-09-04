@@ -1,5 +1,4 @@
 import axios, { AxiosError, type AxiosRequestConfig } from "axios";
-import { Provider } from "@/constants/providers";
 
 interface ValidationError {
   loc: string[];
@@ -217,25 +216,3 @@ export function friendlyError(error: unknown) {
   return error instanceof ApiError ?
     error.message || ERROR_MESSAGES[error.data?.error?.code] : "Something went wrong. Please try again.";
 }
-
-// export const api = {
-//   providers: () => request<Provider[]>('/ai/providers/'),
-//   testConnection: (payload: { provider: string; model: string; api_key: string }) =>
-//     request<{ connection_successful: boolean; provider: string; model: string }>(
-//       '/ai/providers/test-connection',
-//       {
-//         method: 'POST', 
-//         headers: { 'Content-Type': 'application/json' },
-//         body: payload
-//       }
-//     ),
-
-//   analyze: (payload: { file: File; provider: string; model: string; api_key: string }) => {
-//     const form = new FormData()
-//     form.append('file', payload.file)
-//     form.append('provider', payload.provider)
-//     form.append('model', payload.model)
-//     form.append('api_key', payload.api_key)
-//     return request<any>('/analyze/', { method: 'POST', body: form })
-//   },
-// }
