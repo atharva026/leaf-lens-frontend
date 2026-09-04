@@ -1270,7 +1270,7 @@ footer a:hover {
   }
 
   /* .analyze-page {
-    padding: 35px 20px 70px
+    padding: 35px 20px
   } */
 
   .analyze-intro {
@@ -1301,6 +1301,10 @@ footer a:hover {
 @media(max-width:460px) {
   .feature-grid {
     grid-template-columns: 1fr
+  }
+
+  .analyze-page {
+    padding: 35px 20px 35px
   }
 
   .hero-actions {
