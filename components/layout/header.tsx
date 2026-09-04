@@ -13,13 +13,15 @@ export function Header() {
     </Link>
 
     <button className="mobile-menu" aria-label="Toggle navigation" onClick={() => setMenu(!menu)}>
-      <Menu size={21} /></button>
+      <Menu size={21} />
+    </button>
     <nav className={menu ? 'nav open' : 'nav'}>
       {navLinks.map((link) => (
         <Link
           key={link.href}
           href={link.href}
           className={link.className}
+          onClick={() => setMenu(false)}
         >
           {link.label}
         </Link>
