@@ -214,7 +214,7 @@ export function Analysis() {
   const resultText = result ? formatResult(result.result) : ''
 
   return (
-    <main className="analyze-page">
+    <main className="pt-5 pb-5 px-4 lg:pt-12 lg:pb-25 lg:px-16">
       <div className="analyze-intro">
         <span className="eyebrow">Crop analysis / private by design</span>
         <h1>Let&apos;s look<br /><em>closer.</em></h1>

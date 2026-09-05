@@ -25,15 +25,28 @@
 html {
   background: var(--bg);
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   background: var(--bg);
   color: var(--text-primary);
   font-family: 'Inter', Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.55
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 button,
@@ -535,9 +548,9 @@ footer a:hover {
   color: var(--accent)
 }
 
-.analyze-page {
+/* .analyze-page {
   padding: 50px 64px 100px
-}
+} */
 
 .analyze-intro {
   display: flex;
@@ -1270,7 +1283,7 @@ footer a:hover {
   }
 
   /* .analyze-page {
-    padding: 35px 20px
+    padding: 35px 20px 70px
   } */
 
   .analyze-intro {
@@ -1303,9 +1316,9 @@ footer a:hover {
     grid-template-columns: 1fr
   }
 
-  .analyze-page {
+  /* .analyze-page {
     padding: 35px 20px 35px
-  }
+  } */
 
   .hero-actions {
     align-items: start;
